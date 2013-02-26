@@ -17,3 +17,11 @@ npm install -g less
 ```  
 
 In order to get some of the tools to work within sublime you will likely need to make sure they are installed in your path.
+
+## Sublime packages to install
+
+- less-build
+- less
+- coffee-compile
+- coffeescript
+- coffeelint
