@@ -26,7 +26,8 @@ In sublime press CMD+SHIFT+P (or CTRL+SHIFT+P in windows) and type `install pack
 - coffeescript
 - coffeelint
 
-To edit your coffeescript build package go to `Sublime Text 2 -> Preferences -> Browse Packages` and open the file `CoffeeScript.sublime-build`.  
+### Configure coffeescript to compile within sublime  
+To edit your coffeescript build package, on your menu go to `Sublime Text 2 -> Preferences -> Browse Packages` and open the file `CoffeeScript.sublime-build`.  
 Replace it's contents with the following:  
 
 
