@@ -25,3 +25,11 @@ In order to get some of the tools to work within sublime you will likely need to
 - coffee-compile
 - coffeescript
 - coffeelint
+
+```  
+{
+    "cmd": ["coffee", "-c", "$file"],
+    "selector" : "source.coffee",
+    "path" : "/usr/local/bin"
+}
+```  
