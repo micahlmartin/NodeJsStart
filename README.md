@@ -26,10 +26,21 @@ In order to get some of the tools to work within sublime you will likely need to
 - coffeescript
 - coffeelint
 
+Mac Users:  
 ```  
 {
     "cmd": ["coffee", "-c", "$file"],
     "selector" : "source.coffee",
     "path" : "/usr/local/bin"
 }
+```
+
+Windows Users:  
 ```  
+{
+"cmd": ["coffee.cmd","-c","$file"],
+"file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+"selector": "source.coffee"
+}  
+```  
+
