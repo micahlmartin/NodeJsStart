@@ -7,16 +7,16 @@
 ```  
 import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')
 ```   
-- From the command prompt or terminal run these commands to install coffee script with the node package manager  
+
+
+From the command prompt or terminal run these commands to install coffeescript and the less compiler with the node package manager  
 ```
 npm install -g coffee-script   
-```  
-- Install the less compiler  
-```
 npm install -g less  
 ```  
 
 In order to get some of the tools to work within sublime you will likely need to make sure they are installed in your path.
+In sublime press CMD+SHIFT+P (or CTRL+SHIFT+P in windows) and type `install package`. From there you can install any available packages.  
 
 ## Sublime packages to install
 
@@ -25,6 +25,10 @@ In order to get some of the tools to work within sublime you will likely need to
 - coffee-compile
 - coffeescript
 - coffeelint
+
+To edit your coffeescript build package go to `Sublime Text 2 -> Preferences -> Browse Packages` and open the file `CoffeeScript.sublime-build`.  
+Replace it's contents with the following:  
+
 
 Mac Users:  
 ```  
@@ -38,9 +42,9 @@ Mac Users:
 Windows Users:  
 ```  
 {
-"cmd": ["coffee.cmd","-c","$file"],
-"file_regex": "^(...*?):([0-9]*):?([0-9]*)",
-"selector": "source.coffee"
+    "cmd": ["coffee.cmd","-c","$file"],
+    "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+    "selector": "source.coffee"
 }  
 ```  
 
